@@ -16,8 +16,12 @@ I ordered a precision USB power meter. Once I have it I can measure the changes 
 I am sharing this to provide a simple example using the code in my repo [RP2-PowerControl](https://github.com/cpottle9/RP2-PowerControl).
 Go look at that repo for more information.
 It is an alternative to using machine.lightsleep() plus other capabilities.
+
 I am a novice python coder. I know this code could be **better** but I think there is value sharing it as is.
 
 This application runs unattended. I've tried to make it as robust as I can.
 I make use of the RP2040 watchdog timer to detect when the code might get stuck and restart micropython to recover.
+
+To use this application you will need the files power_ctrl_abstract.py and power_ctrl_2040.py from my repo RP2-PowerControl.
+Also, you will need to modify the file secrets.py to include your WIFI and MQTT info.
 
