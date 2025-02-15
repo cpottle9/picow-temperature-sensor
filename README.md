@@ -5,13 +5,18 @@ It periodically reads temperature from an [mcp9808](https://www.adafruit.com/pro
 
 It is intended to run from battery.
 My hardware setup has it running from 2 AA alkaline batteries.
-Depending on the battery brand used it runs 2 to 4 weeks.
+Depending on the battery brand used it runs 1 or 2 weeks.
 I'd like to do better and am working to reduce power further.
 I use this as part of my home automation system.
 
 I am trying many different techniques to reduce power usage.
-I have not measured the actual power reduction for each.
-I ordered a precision USB power meter. Once I have it I can measure the changes and report my findings here.
+I am measuring power using an FNIRSI FNB58 USB tester.
+When my code is asleep it consumes about 7.8 milliamps.
+
+This compares to normal micropython at about 17 milliamps.
+Lightsleep in version 1.23.0 consumes 1.6 milliamps.
+(Note that lightsleep in 1.24.1 has some bugs).
+But it has much more hardware turned off.
 
 I am sharing this to provide a simple example using the code in my repo [RP2-PowerControl](https://github.com/cpottle9/RP2-PowerControl).
 Go look at that repo for more information.
