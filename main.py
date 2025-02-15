@@ -47,8 +47,6 @@ pwr.disable_while_sleeping_all_but(
 # ADC needed to read system voltage
 
 pwr.disable_while_awake(
-    pwr.EN0_CLK_SYS_SRAM3,
-    pwr.EN0_CLK_SYS_SRAM2,
     pwr.EN0_CLK_SYS_SPI0,
     pwr.EN0_CLK_PERI_SPI0,
     pwr.EN0_CLK_SYS_SPI1,
